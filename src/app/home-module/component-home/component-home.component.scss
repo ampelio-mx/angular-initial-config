@@ -1,0 +1,488 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-home-navbar {
+
+    background-color: rgb(65, 65, 65);
+
+    .row-home-navbar {
+        width: 100vw;
+        height: 7vh;
+        border-bottom: 2px solid rgb(218, 177, 42);
+
+        .column-home-navbar {
+            height: 7vh;
+            display: flex;
+            flex-direction: row;
+
+            .navbar-box-element {
+                height: 7vh;
+            }
+
+            .logo-element {
+                width: 10vw;
+                background-image: url('./../../../assets/images//aurex_logo.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .menu-items-element {
+                width: 75vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                .items-element{
+                    width: 8vw;
+                     height: 7vh;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      p{
+                         font-size: 16px;
+                            text-align: center;
+                            line-height: 1;
+                            font-family: "Vend Sans", sans-serif;
+                            font-optical-sizing: auto;
+                            font-weight: 400;
+                            font-style: normal;
+                            color: rgb(231, 231, 231);
+                            letter-spacing: 1px;
+                            margin: 0;
+                      }
+                }
+            }
+
+            .login-button-element {
+                width: 10vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .login-button {
+                    width: 7vw;
+                    height: 3vh;
+                    color: rgb(59, 59, 59);
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 1;
+                    font-family: "Vend Sans", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 600;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    -webkit-text-stroke: 0.4px rgb(236, 236, 236);
+                    background-color: rgb(218, 177, 42);
+                    border-radius: 16px;
+                    border: 0.3px solid rgb(236, 236, 236);
+                    box-shadow: 0px 3px 4px 2px rgba(78, 78, 78, 0.4);
+
+                    &:hover {
+                        box-shadow: 0px 3px 4px 2px rgba(218, 177, 42, 0.2),
+                            -2px 0px 4px 2px rgba(218, 177, 42, 0.1);
+                    }
+
+                }
+            }
+
+            .hiden-toogle-element {
+                width: 5vw;
+            }
+        }
+    }
+}
+
+.container-home-body {
+    background-color: rgb(236, 236, 236);
+
+    .row-home-body {
+        width: 100vw;
+        height: 90vh;
+        
+
+
+        .column-home-body {
+            height: 90vh;
+
+            position: absolute;
+            
+            .home-body-box-left {
+                width: 40vw;
+                height: 90vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: linear-gradient(0deg, rgba(236, 236, 236, 1)5%, rgba(179, 91, 91, 0)15%),url('./../../../assets/images/woman_money.png');
+          
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+
+            .home-body-box-right {
+                width: 60vw;
+                height: 90vh;
+                position: absolute;
+                top: 0;
+                left: 40%;
+                display: flex;
+                flex-direction: column;
+
+
+                .home-body-box-right-text {
+                    width: 100%;
+                    height: 20vh;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+
+
+                    .box-right-text-up {
+                        width: 60%;
+                        height: 8vh;
+
+
+                        h4 {
+                            font-size: 48px;
+                            text-align: center;
+                            line-height: 1.5;
+                            font-family: "Atkinson Hyperlegible Mono", sans-serif;
+                            font-optical-sizing: auto;
+                            font-weight: 600;
+                            font-style: normal;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            text-align: center;
+                            line-height: 1.5;
+                            font-family: "Vend Sans", sans-serif;
+                            font-optical-sizing: auto;
+                            font-weight: 400;
+                            font-style: normal;
+                            color: rgb(218, 177, 42);
+                        }
+                    }
+
+                    .box-right-text-bottom {
+                        width: 60%;
+                        height: 4vh;
+
+
+                    }
+                }
+
+                .home-body-box-right-form {
+                    width: 100%;
+                    height: 47vh;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+
+                    .quoter-form-class {
+                        width: 60%;
+                        height: 47vh;
+
+
+
+                        .quoter-form-fieldset-inputs {
+
+                            width: 100%;
+                            height: 35vh;
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+
+                            .form-input-text-description {
+                                width: 20vw;
+                                height: 3vh;
+
+                            }
+
+                            .fieldset-inputs-elements {
+                                width: 20vw;
+                                height: 4vh;
+
+                            }
+
+                            .form-input-text-hidden {
+                                width: 20vw;
+                                height: 2vh;
+                                margin: 0 0 2vh 0;
+
+
+                                p {
+                                    font-size: 12px;
+                                }
+                            }
+
+                            #formulario-contacto-legend {
+                                width: 80%;
+                                height: 6vh;
+
+                                font-size: 22px;
+                                text-align: center;
+                                line-height: 2.2;
+                                font-family: "Atkinson Hyperlegible Mono", sans-serif;
+                                font-optical-sizing: auto;
+                                font-weight: 400;
+                                font-style: normal;
+                                margin: 5vh 0 2vh 0;
+                            }
+
+                        }
+
+                        .quoter-form-fieldset-button {
+
+                            width: 100%;
+                            height: 12vh;
+
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            button {
+                                width: 20vw;
+                                height: 4vh;
+                                color: rgb(255, 255, 255);
+                                font-size: 20px;
+                                text-align: center;
+                                line-height: 1.5;
+                                font-family: "Vend Sans", sans-serif;
+                                font-optical-sizing: auto;
+                                font-weight: 400;
+                                font-style: normal;
+                                letter-spacing: 4px;
+                                -webkit-text-stroke: 0.2px rgb(59, 59, 59);
+                                background-color: rgb(43, 85, 72);
+                                border-radius: 8px;
+                                border: 0.3px solid rgb(236, 236, 236);
+                                box-shadow: 0px 3px 4px 2px rgba(78, 78, 78, 0.4);
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+            .home-body-box-bottom {
+                width: 100vw;
+                height: 23vh;
+                position: relative;
+                top: 67vh;
+
+                left: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+                .body-box-bottom-text {
+                    width: 27vw;
+                    height: 12vh;
+                    border-radius: 12px;
+                    border: 0.5px solid rgb(218, 177, 42);
+                    background-color: rgba(247, 247, 247,1);
+                    box-shadow: 0px 3px 4px 2px rgba(78, 78, 78, 0.3);
+                }
+
+                .show-bottom-text {
+                    opacity: 0;
+                    transition: opacity 2.8s ease;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+
+                    .show-bottom-text-icons {
+                        width: 7vw;
+                        height: 12vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .fa-money-bill-1-wave,
+                        .fa-clock,
+                        .fa-percent {
+                            font-size: 48px;
+                            color: rgba(78, 78, 78, 5);
+                        }
+                    }
+
+                    .show-bottom-text-description {
+                         width: 20vw;
+                        height: 12vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                         p{
+                         font-size: 18px;
+                            text-align: center;
+                            line-height: 1;
+                            font-family: "Vend Sans", sans-serif;
+                            font-optical-sizing: auto;
+                            font-weight: 400;
+                            font-style: normal;
+                            color: rgb(102, 102, 102);
+                            letter-spacing: 5px;
+                            margin: 0;
+                      }
+                    }
+                }
+
+                .show-bottom-text.showelement {
+                    opacity: 1;
+                }
+
+            }
+        }
+
+
+
+
+
+    }
+
+}
+
+.container-home-reviews {
+    background-color: rgb(236, 236, 236);
+
+    .row-home-reviews {
+        width: 100vw;
+        height: 70vh;
+
+        .column-home-reviews {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .home-reviews-card {
+                width: 20vw;
+                height: 45vh;
+                position: absolute;
+
+                .home-reviews-card-name {
+                    width: 20vw;
+                    height: 15vh;
+                    position: absolute;
+                    top: 0vh;
+                    left: 0vw;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+
+                    .reviews-card-name-text {
+                        width: 10vw;
+                        height: 15vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        padding-left: 1vw;
+
+                        h5 {
+                            font-size: 16px;
+                            text-align: center;
+                            font-family: "Atkinson Hyperlegible Mono", sans-serif;
+                            font-optical-sizing: auto;
+                            font-weight: 600;
+                            font-style: normal;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            text-align: center;
+                            font-family: "Vend Sans", sans-serif;
+                            font-optical-sizing: auto;
+                            font-weight: 600;
+                            font-style: normal;
+                            color: rgb(95, 95, 95);
+                        }
+                    }
+                }
+
+                .home-reviews-card-opinion {
+
+                    width: 20vw;
+                    height: 25vh;
+                    position: absolute;
+                    top: 15vh;
+                    left: 0vw;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+
+                    .reviews-card-opinion-text {
+                        width: 18vw;
+                        height: 25vh;
+                        border-radius: 12px;
+                        box-shadow: 0px 3px 4px 2px rgba(78, 78, 78, 0.4);
+                        background-color: rgb(238, 238, 238);
+                    }
+                }
+
+                .home-reviews-card-score {
+                    width: 20vw;
+                    height: 5vh;
+                    position: absolute;
+                    top: 40vh;
+                    left: 0vw;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    .fa-star {
+                        font-size: 27px;
+                        font-weight: 500;
+                        color: rgb(218, 177, 42);
+                        -webkit-text-stroke: 1px rgb(65, 65, 65);
+                        text-shadow: 0px 4px 2px rgba(78, 78, 78, 0.4);
+                        ;
+                    }
+                }
+
+                .home-reviews-card-photo {
+                    width: 10vw;
+                    height: 10vw;
+                    background-image: url('./../../../assets/images/ama_casa.png'),
+                        linear-gradient(0deg, rgb(162, 96, 224), rgb(255, 255, 255, 0)70%);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    border-radius: 50%;
+                    position: relative;
+                    top: 2vh;
+                    left: 1vw;
+                }
+            }
+
+        }
+    }
+}
+
+.container-home-footer{
+      background-color: rgb(65, 65, 65);
+    .row-home-footer{
+        width: 100vw;
+        height: 37vh;
+        .column-home-footer{
+         height: 37vh;
+        }
+    }
+}

@@ -1,0 +1,235 @@
+<div class="container-fluid container-home-navbar">
+    <div class="row row-home-navbar">
+
+        <div class="col-12 column-home-navbar">
+            <div class="navbar-box-element logo-element"></div>
+            <div class="navbar-box-element menu-items-element">
+                <div class="items-element">
+                    <p>¿Quiénes somos?</p>
+                </div>
+                <div class="items-element">
+                    <p>Productos</p>
+                </div>
+                <div class="items-element">
+                    <p>Consultoría</p>
+                </div>
+                <div class="items-element">
+                    <p>Consultoría</p>
+                </div>
+
+            </div>
+            <div class="navbar-box-element login-button-element">
+                <button class="login-button">Iniciar sesión</button>
+            </div>
+            <div class="navbar-box-element hiden-toogle-element"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-home-body">
+    <div class="row row-home-body">
+
+        <div class="col-12 column-home-body">
+            <div class="home-body-box home-body-box-left"></div>
+            <div class="home-body-box home-body-box-right">
+                <div class="home-body-box-right-text">
+                    <div class="box-right-text-up">
+                        <h4>Solicita tu crédito</h4>
+                        <p>Aprobación en menos de 30 minutos</p>
+                    </div>
+                    <div class="box-right-text-bottom"></div>
+                </div>
+                <div class="home-body-box-right-form">
+
+                    <!-----------FORMULARIO --------->
+                    <form class="quoter-form-class" id="quoter-form-id">
+                        <!----------- [formGroup]="datosFormulario" (ngSubmit)=" enviarFormulario(); imprimirDatosFormulario(); --------->
+
+                        <fieldset class="quoter-form-fieldset quoter-form-fieldset-inputs">
+
+                            <legend id="formulario-contacto-legend">
+                                Ingresa los datos del crédito
+                            </legend>
+                            <div class="form-input-text-description">
+                                <p class="formulario-login-parrafo">
+                                    <!-----------  *ngIf="datosFormulario.get('nombreProspecto')?.touched && datosFormulario.get('nombreProspecto')?.invalid" --------->
+                                    Monto del crédito
+                                </p>
+                            </div>
+
+                            <input type="text" id="inputNombre"
+                                class="fieldset-inputs-elements form-control formulario-login-input"
+                                placeholder="$100.00 - $10,000.00" required formControlName="nombreProspecto">
+                            <div class="fieldset-inputs-elements form-input-text-hidden">
+                                <p class="formulario-login-parrafo">
+                                    <!-----------  *ngIf="datosFormulario.get('nombreProspecto')?.touched && datosFormulario.get('nombreProspecto')?.invalid" --------->
+                                    Por favor ingresa el monto del crédito.
+                                </p>
+                            </div>
+
+                            <div class="form-input-text-description">
+                                <p class="formulario-login-parrafo">
+                                    <!-----------  *ngIf="datosFormulario.get('nombreProspecto')?.touched && datosFormulario.get('nombreProspecto')?.invalid" --------->
+                                    Elige el plazo
+                                </p>
+                            </div>
+
+                            <select class="fieldset-inputs-elements dropdownlist-tamano-precio">
+                                <option>Plazos</option>
+                                <option>12 meses</option>
+                                <option>24 meses</option>
+                                <option>36 meses</option>
+                                <!----------- <option [ngValue]="productos.precioProductoIndividual">Individual: {{productos ? productos.precioProductoIndividual : ''}}</option> --------->
+                            </select>
+                            <div class="fieldset-inputs-elements form-input-text-hidden">
+                                <p class="formulario-login-parrafo">
+                                    <!-----------  *ngIf="datosFormulario.get('nombreProspecto')?.touched && datosFormulario.get('nombreProspecto')?.invalid" --------->
+                                    Debes seleccionar el plazo.
+                                </p>
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset class="quoter-form-fieldset quoter-form-fieldset-button">
+                            <button class="formulario-login-button">Enviar</button>
+                        </fieldset>
+
+                    </form>
+
+
+                </div>
+            </div>
+            <div class="home-body-box home-body-box-bottom">
+                <div class="body-box-bottom-text show-bottom-text" [class.showelement]="showFirst">
+                    <div class="show-bottom-text-icons">
+                        <i class="fa-solid fa-money-bill-1-wave"></i>
+                    </div>
+                    <div class="show-bottom-text-description">
+                        <p>Selecciona el monto</p>
+                    </div>
+                </div>
+                <div class="body-box-bottom-text show-bottom-text" [class.showelement]="showSecond">
+                    <div class="show-bottom-text-icons">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="show-bottom-text-description">
+                        <p>Selecciona el plazo</p>
+                    </div>
+                </div>
+                <div class="body-box-bottom-text show-bottom-text" [class.showelement]="showThird">
+                    <div class="show-bottom-text-icons">
+                        <i class="fa-solid fa-percent"></i>
+                    </div>
+                    <div class="show-bottom-text-description">
+                        <p>+ tasa anual</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid container-home-reviews">
+    <div class="row row-home-reviews">
+
+        <div class="col-4 column-home-reviews">
+            <div class="home-reviews-card">
+
+                <div class="home-reviews-card-name">
+                    <div class="reviews-card-name-text">
+                        <h5>ÁNGELES GARCÍA</h5>
+                        <p>Vendedora de abarrotes</p>
+
+                    </div>
+                </div>
+                <div class="home-reviews-card-opinion">
+                    <div class="reviews-card-opinion-text">
+
+                    </div>
+                </div>
+                <div class="home-reviews-card-score">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="home-reviews-card-photo">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-4 column-home-reviews">
+            <div class="home-reviews-card">
+
+                <div class="home-reviews-card-name">
+                    <div class="reviews-card-name-text">
+                        <h5>ÁNGELES GARCÍA</h5>
+                        <p>Vendedora de abarrotes</p>
+
+                    </div>
+                </div>
+                <div class="home-reviews-card-opinion">
+                    <div class="reviews-card-opinion-text">
+
+                    </div>
+                </div>
+                <div class="home-reviews-card-score">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="home-reviews-card-photo photo-two">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-4 column-home-reviews">
+            <div class="home-reviews-card">
+
+                <div class="home-reviews-card-name">
+                    <div class="reviews-card-name-text">
+                        <h5>ÁNGELES GARCÍA</h5>
+                        <p>Vendedora de abarrotes</p>
+
+                    </div>
+                </div>
+                <div class="home-reviews-card-opinion">
+                    <div class="reviews-card-opinion-text">
+
+                    </div>
+                </div>
+                <div class="home-reviews-card-score">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="home-reviews-card-photo">
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<div class="container-fluid container-home-footer">
+    <div class="row row-home-footer">
+
+        <div class="col-12 column-home-footer">
+
+        </div>
+    </div>
+</div>
