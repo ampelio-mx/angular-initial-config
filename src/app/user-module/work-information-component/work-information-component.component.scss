@@ -16,7 +16,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid cyan;
 
             .user-personal-data-form-external-box {
                 width: 60vw;
@@ -25,8 +24,8 @@
                 background-color: rgba(255, 255, 255, 1);
                 display: flex;
                 flex-direction: column;
-                border: 1px solid cyan;
-                
+                box-shadow: 0px 3px 20px 2px rgba(78, 78, 78, 0.3);
+
                 .user-personal-data-description-loan-box {
                     width: 60vw;
                     height: 5vh;
@@ -40,13 +39,13 @@
                     display: flex;
                     flex-direction: row;
                     position: relative;
-                    
+
                     .sections-box {
                         width: 33.333%;
                         height: 5vh;
                         display: flex;
                         flex-direction: row;
-                        
+
                         .sections-box-loader {
                             width: 30%;
                             height: 5vh;
@@ -86,7 +85,8 @@
                             height: 5vh;
                             display: flex;
                             justify-content: flex-start;
-                            align-items: center;                            
+                            align-items: center;
+
                         }
 
                     }
@@ -94,11 +94,11 @@
 
                     .sections-box-left {
                         background-color: rgba(65, 65, 65, 1);
-                        
+                       
                     }
 
                     .sections-box-middle {
-                        background-color: transparent;
+                         background-color: transparent;
                         z-index: 2;
                     }
 
@@ -112,7 +112,7 @@
                         height: 5vh;
                         position: absolute;
                         top: 0vh;
-                        left: 33.33%;
+                        left: 33.333%;
                         background-image: linear-gradient(45deg, rgba(255, 255, 255, 1)75%, rgba(255, 255, 255, 0.8)85%, rgba(65, 65, 65, 1)85%);
                         z-index: 1;
 
@@ -128,9 +128,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: rgba(5, 255, 255, 1);
-                    
-                        
+
                     .form-user-personal-data {
                         width: 60vw;
                         height: 50vh;
@@ -138,7 +136,7 @@
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        border-radius: 4px;
+                        border-radius: 0 0 4px 4px;
                         z-index: 2;
                         border: 0.3px solid rgba(255, 255, 255, 0.3);
                         background-color: rgba(255, 255, 255, 1);
@@ -171,7 +169,7 @@
                                     width: 20vw;
                                     height: 6vh;
                                     margin: 4vh 0 4.5vh 0;
-                                    
+
                                     h2 {
                                         font-size: 28px;
                                         text-align: center;
@@ -185,8 +183,9 @@
                                     }
                                 }
 
-                                .input-personal-data-field-name{
-                                     display: flex;
+
+                                .label-personal-data-field-name {
+                                    display: flex;
                                     flex-direction: column;
                                     justify-content: center;
                                     align-items: flex-start;
@@ -204,11 +203,17 @@
                                         font-weight: 400;
                                         font-style: normal;
                                     }
+                                }
 
+                                .short-label-personal-data-field-name {
+
+                                    width: 10vw;
+                                    height: 3vh;
+                                    margin-left: 10vw;
                                 }
 
                                 .form-input-personal-data {
-                                     width: 20vw;
+                                    width: 20vw;
                                     height: 3vh;
                                     border: 0.01px solid rgba(207, 207, 207, 1);
                                     background-color: rgb(255, 255, 255);
@@ -222,13 +227,16 @@
                                     margin-bottom: 0;
                                     padding: 0 0 0 1vw;
 
+
                                 }
 
-                                .form-input-personal-data-birthday{
-                                        width: 10vw;
+                                .form-input-personal-data-birthday,
+                                .form-input-personal-gender {
+                                    width: 10vw;
                                     height: 3vh;
-                                    margin-right: 10vw;
+                                    margin-left: 10vw;
                                 }
+
                                 .form-input-personal-data::placeholder {
                                     color: #3f3e3e;
                                     opacity: 0.6;
@@ -250,7 +258,7 @@
                                         font-weight: 500;
                                         text-align: center;
                                         margin-bottom: 0;
-                                        color: rgb(255, 255, 255);
+                                        color: rgba(218, 218, 218, 0);
                                     }
                                 }
                             }
@@ -264,7 +272,7 @@
                             width: 60vw;
                             height: 10vh;
                             font-size: 0.1px;
-
+                            padding-right: 8vw;
                             .formulario-login-boton {
                                 width: 16vw;
                                 height: 4vh;

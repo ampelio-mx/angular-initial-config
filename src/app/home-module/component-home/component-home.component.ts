@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-component-home',
@@ -25,5 +26,13 @@ export class ComponentHomeComponent {
       this.showThird = true;
     },2250);
   }
+
+  constructor(private router: Router){
+
+  }
+
+   goToPersonalInformationForm(){
+      this.router.navigate(['/','user-module','formulario-informacion-personal'])
+    }
 
 }

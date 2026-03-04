@@ -56,7 +56,7 @@
                                     <p class="validation-text">Por favor, ingresa un teléfono de contacto</p>
                                 </div>
 
-                                  <div class="label-personal-data-field-name short-label-personal-data-field-name">
+                                <div class="label-personal-data-field-name short-label-personal-data-field-name">
                                     <label class="validation-text">Género</label>
                                 </div>
                                 <select id="lista-desplegable-guardar" formControlName="categoriaProducto" class="form-control form-input-personal-data form-input-personal-gender">
@@ -81,17 +81,17 @@
                                     <label class="validation-text">Segundo nombre</label>
                                 </div>
                                 <input type="text" id="inputNombre" class="form-control form-input-personal-data"
-                                    placeholder="Ingresa tu segundo nombre *si aplica" required autofocus
+                                    placeholder="Segundo nombre (*si aplica)" required autofocus
                                     formControlName="nombreProspecto">
                                 <div class="input-personal-data-validation-text">
                                     <p class="validation-text">Ingresa tu segundo nombre, por favor *opcional</p>
                                 </div>
 
                                 <div class="label-personal-data-field-name">
-                                    <label class="validation-text">Apellido Paterno</label>
+                                    <label class="validation-text">Apellido Materno</label>
                                 </div>
-                                <input type="email" id="inputEMail" class="form-control form-input-personal-data"
-                                    placeholder="Ingresa tu e mail" required autofocus formControlName="emailProspecto">
+                                <input type="text" id="inputEMail" class="form-control form-input-personal-data"
+                                    placeholder="Apellido Materno (obligatorio)" required autofocus formControlName="emailProspecto">
                                 <div class="input-personal-data-validation-text">
                                     <p class="validation-text">Ingresa un email válido, por favor</p>
                                 </div>
@@ -113,7 +113,7 @@
                         </fieldset>
 
                         <fieldset class="formulario-contacto-fieldset-botones">
-                            <button class="formulario-login-boton">Enviar</button>
+                            <button class="formulario-login-boton" (click)="goToWorkInformation()">Enviar</button>
                         </fieldset>
 
                     </form>
