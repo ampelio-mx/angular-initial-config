@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-user-personal-data-form {
+    background-color: rgb(236, 236, 236);
+
+    .row-user-personal-data-form {
+        width: 100vw;
+        height: 100vh;
+
+        .column-user-personal-data-form {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid cyan;
+
+            .user-personal-data-form-external-box {
+                width: 60vw;
+                height: 60vh;
+                border-radius: 15px;
+                background-color: rgba(255, 255, 255, 1);
+                display: flex;
+                flex-direction: column;
+                border: 1px solid cyan;
+                
+                .user-personal-data-description-loan-box {
+                    width: 60vw;
+                    height: 5vh;
+                    border-radius: 15px 15px 0 0;
+                    background-color: rgba(218, 177, 42, 1);
+                }
+
+                .user-personal-data-sections-box {
+                    width: 60vw;
+                    height: 5vh;
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+                    
+                    .sections-box {
+                        width: 33.333%;
+                        height: 5vh;
+                        display: flex;
+                        flex-direction: row;
+                        
+                        .sections-box-loader {
+                            width: 30%;
+                            height: 5vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .spinner {
+                                background-image: linear-gradient(rgba(218, 177, 42, 0.4) 50%, rgba(218, 177, 42, 1));
+                                width: 3vh;
+                                height: 3vh;
+                                animation: spinning82341 1.9s linear infinite;
+                                text-align: center;
+                                border-radius: 50%;
+                                filter: blur(1px);
+                                box-shadow: 0px -2px 6px 0px rgba(218, 177, 42, 0.4), 0px 2px 6px 0px rgba(218, 177, 42, 1);
+                            }
+
+                            .spinner1 {
+                                background-color: rgb(255, 255, 255);
+                                width: 3vh;
+                                height: 3vh;
+                                border-radius: 50%;
+                                filter: blur(2px);
+                            }
+
+                            @keyframes spinning82341 {
+                                to {
+                                    transform: rotate(360deg);
+                                }
+                            }
+
+                        }
+
+                        .sections-box-text {
+                            width: 70%;
+                            height: 5vh;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;                            
+                        }
+
+                    }
+
+
+                    .sections-box-left {
+                        background-color: rgba(65, 65, 65, 1);
+                        
+                    }
+
+                    .sections-box-middle {
+                        background-color: transparent;
+                        z-index: 2;
+                    }
+
+                    .sections-box-right {
+                        background-color: rgba(65, 65, 65, 1);
+                    }
+
+
+                    .sections-box-gradient {
+                        width: 33.33%;
+                        height: 5vh;
+                        position: absolute;
+                        top: 0vh;
+                        left: 33.33%;
+                        background-image: linear-gradient(45deg, rgba(255, 255, 255, 1)75%, rgba(255, 255, 255, 0.8)85%, rgba(65, 65, 65, 1)85%);
+                        z-index: 1;
+
+                    }
+
+
+                }
+
+
+                .user-personal-data-form-box {
+                    width: 60vw;
+                    height: 50vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(5, 255, 255, 1);
+                    
+                        
+                    .form-user-personal-data {
+                        width: 60vw;
+                        height: 50vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 4px;
+                        z-index: 2;
+                        border: 0.3px solid rgba(255, 255, 255, 0.3);
+                        background-color: rgba(255, 255, 255, 1);
+                        box-shadow: inset 0px 3px 5px 3px rgba(51, 51, 51, 0.0),
+                            inset 0px 3px 40px 30px rgba(51, 51, 51, 0.0);
+
+                        .fieldset-user-personal-data {
+
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            width: 60vw;
+                            height: 40vh;
+                            font-size: 0.5px;
+
+                            .fieldset-data-box {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                width: 24vw;
+                                height: 40vh;
+                                font-size: 0.5px;
+
+                                #user-personal-data-legend {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: flex-start;
+                                    width: 20vw;
+                                    height: 6vh;
+                                    margin: 4vh 0 4.5vh 0;
+                                    
+                                    h2 {
+                                        font-size: 28px;
+                                        text-align: center;
+                                        line-height: 1.5;
+                                        font-family: "Atkinson Hyperlegible Mono", sans-serif;
+                                        font-optical-sizing: auto;
+                                        font-weight: 600;
+                                        font-style: normal;
+                                        color: rgb(97, 97, 97);
+                                        letter-spacing: 5px;
+                                    }
+                                }
+
+                                .input-personal-data-field-name{
+                                     display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: flex-start;
+                                    width: 20vw;
+                                    height: 3vh;
+                                    padding-left: 3vh;
+
+                                    .validation-text {
+                                        font-size: 16px;
+                                        text-align: left;
+                                        margin-bottom: 0;
+                                        color: rgb(112, 112, 112);
+                                        font-family: "Vend Sans", sans-serif;
+                                        font-optical-sizing: auto;
+                                        font-weight: 400;
+                                        font-style: normal;
+                                    }
+
+                                }
+
+                                .form-input-personal-data {
+                                     width: 20vw;
+                                    height: 3vh;
+                                    border: 0.01px solid rgba(207, 207, 207, 1);
+                                    background-color: rgb(255, 255, 255);
+                                    box-shadow: inset 0.1em 0.1em 0.5em 0em rgba(51, 51, 51, 0.05),
+                                        inset -0.1em -0.1em 0.5em 0em rgba(51, 51, 51, 0.05);
+
+                                    text-align: left;
+                                    letter-spacing: 1px;
+
+                                    font-size: 16px;
+                                    margin-bottom: 0;
+                                    padding: 0 0 0 1vw;
+
+                                }
+
+                                .form-input-personal-data-birthday{
+                                        width: 10vw;
+                                    height: 3vh;
+                                    margin-right: 10vw;
+                                }
+                                .form-input-personal-data::placeholder {
+                                    color: #3f3e3e;
+                                    opacity: 0.6;
+                                }
+
+                                .input-personal-data-validation-text {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 20vw;
+                                    height: 2.5vh;
+                                    color: rgb(255, 255, 255);
+
+                                    .validation-text {
+                                        width: 16vw;
+                                        height: 2.5vh;
+                                        font-size: 13px;
+                                        font-weight: 500;
+                                        text-align: center;
+                                        margin-bottom: 0;
+                                        color: rgb(255, 255, 255);
+                                    }
+                                }
+                            }
+                        }
+
+                        .formulario-contacto-fieldset-botones {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-end;
+                            width: 60vw;
+                            height: 10vh;
+                            font-size: 0.1px;
+
+                            .formulario-login-boton {
+                                width: 16vw;
+                                height: 4vh;
+                                color: rgb(59, 59, 59);
+                                font-size: 18px;
+                                text-align: center;
+                                line-height: 1;
+                                font-family: "Vend Sans", sans-serif;
+                                font-optical-sizing: auto;
+                                font-weight: 600;
+                                font-style: normal;
+                                letter-spacing: 0px;
+                                -webkit-text-stroke: 0.4px rgb(236, 236, 236);
+                                background-color: rgb(218, 177, 42);
+                                border-radius: 16px;
+                                border: 0.3px solid rgb(236, 236, 236);
+                                box-shadow: 0px 3px 4px 2px rgba(78, 78, 78, 0.4);
+
+                            }
+
+                        }
+
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
